@@ -1,0 +1,14 @@
+.fake-header {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 52px; 
+    background-color: var(--color-bg);
+    z-index: -1; 
+}
+
+.page{
+    background-color: var(--color-bg)
+}

@@ -1,0 +1,35 @@
+<header class="header">
+    <!-- Logo à esquerda -->
+    <div class="header__logo">
+      <img src="/profile.png" alt="profile" />
+    </div>
+  
+    <!-- Navegação centralizada -->
+    <nav class="header__nav">
+        <ul>
+            <li><button (click)="setPage('About')"
+                [ngClass]="{'current-page': isCurrentPage('About')}"
+                >
+                Sobre mim
+            </button></li>
+            <li><button (click)="setPage('Projects')"
+                [ngClass]="{'current-page': isCurrentPage('Projects')}"
+                >
+                Projetos
+            </button></li>
+            <li><button (click)="setPage('Creativity')"
+                [ngClass]="{'current-page': isCurrentPage('Creativity')}"
+                >
+                Criatividade
+            </button></li>
+        </ul>
+
+    </nav>
+  
+    <!-- Botões à direita para alternar tema e idioma -->
+    <div class="header__controls">
+      
+      <app-theme-switch></app-theme-switch>
+    </div>
+</header>
+  

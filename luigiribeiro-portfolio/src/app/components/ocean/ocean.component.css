@@ -1,0 +1,19 @@
+.page-container {
+  /* Ajuste a altura para permitir o scroll */
+  height: 300vh; /* ou outra altura que faça o scroll funcionar */
+  position: fixed;
+}
+
+.ocean-box {
+  width: 100vw;
+  height: var(--iframeh);
+  z-index: 2;
+  position:sticky;
+  top: 0;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
