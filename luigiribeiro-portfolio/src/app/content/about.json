@@ -1,0 +1,47 @@
+{
+    "personalInfo": {
+      "name": "Luigi Ribeiro Ferreira",
+      "position": "Desenvolvedor"
+    },
+    "about": {
+      "title": "Quem eu sou",
+      "description": "Sou um desenvolvedor front-end que adora tudo relacionado à tecnologia. Gosto de trabalhar em equipe e enfrentar desafios de forma criativa. Estou sempre em busca de aprender algo novo e melhorar minhas habilidades. Acredito que o aprendizado nunca acaba, e cada projeto é uma oportunidade para crescer."
+    },
+    "experiences": [
+      {
+        "company": "Divex",
+        "projectName": "Artmed+",
+        "description": "Desenvolvo OnePages para cursos de medicina, criando interfaces intuitivas e eficazes. Trabalho em colaboração com a equipe para captar e implementar requisitos específicos e participo ativamente de revisões e feedbacks, sempre buscando aprimorar processos e resultados finais.",
+        "imagePath": "/assets/images/project-x.png"
+      },
+      {
+        "company": "Divex",
+        "projectName": "PucRio",
+        "description": "Desenvolvi OnePages para cursos da Puc-Rio, onde criei interfaces funcionais e visualmente atraentes. Mantive uma comunicação constante com a equipe da A+, alinhando requisitos, revisões e prazos, e assegurando que cada projeto fosse entregue no prazo e de acordo com altos padrões de qualidade.",
+        "imagePath": "/assets/images/project-x.png"
+      }
+    
+    ],
+    "courses": [
+      {
+        "institution": "Estácio",
+        "name": "Ciência da computação",
+        "description": "(Atualmente)"
+      },
+      {
+        "institution": "Dio",
+        "name": "Desenvolvimento Front-End com Angular",
+        "description": "Mastered Angular fundamentals, RxJS, and state management..."
+      },
+      {
+        "institution": "Fundação Bradesco",
+        "name": "Curso de HTML Avançado",
+        "description": "Mastered Angular fundamentals, RxJS, and state management..."
+      }
+    ],
+    "skills": {
+      "languages": ["English (Fluent)", "Portuguese (Native)"],
+      "programmingLanguages": ["JavaScript/TypeScript", "Python", "Java"],
+      "softSkills": ["Team Collaboration", "Problem Solving", "Agile Methodology"]
+    }
+  }

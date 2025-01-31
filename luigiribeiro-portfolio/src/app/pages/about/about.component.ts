@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OceanComponent } from '../../components/ocean/ocean.component';
 import { WhoIAmComponent } from '../../components/who-i-am/who-i-am.component';
 import { IdentifyComponent } from '../../components/identify/identify.component';
 import { ExperiencesComponent } from '../../components/experiences/experiences.component';
 import { GlobalService } from '../../services/global.service';
+import { AboutContentService } from '../../services/content/about-content.service';
+import { AboutData } from '../../models/about.model';
 
 @Component({
   selector: 'app-about',
@@ -13,15 +15,17 @@ import { GlobalService } from '../../services/global.service';
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit{
   currentTheme: 'light' | 'dark' | 'ocean';
+  aboutData!: AboutData;
 
-  constructor(public globalService: GlobalService) {
+  constructor(public globalService: GlobalService, private aboutContentService: AboutContentService) {
     this.currentTheme = this.globalService.theme;
   }
 
   ngOnInit() {
-    this.currentTheme = this.globalService.theme; 
+    this.currentTheme = this.globalService.theme;
+    this.aboutData = this.aboutContentService.getAboutData(); 
   }
   
 }

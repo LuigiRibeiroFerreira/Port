@@ -7,22 +7,10 @@
     <!-- Navegação centralizada -->
     <nav class="header__nav">
         <ul>
-            <li><button (click)="setPage('About')"
-                [ngClass]="{'current-page': isCurrentPage('About')}"
-                >
-                Sobre mim
-            </button></li>
-            <li><button (click)="setPage('Projects')"
-                [ngClass]="{'current-page': isCurrentPage('Projects')}"
-                >
-                Projetos
-            </button></li>
-            <li><button (click)="setPage('Creativity')"
-                [ngClass]="{'current-page': isCurrentPage('Creativity')}"
-                >
-                Criatividade
-            </button></li>
-        </ul>
+            <li *ngFor="let link of headerData.navLinks">
+              <a >{{ link.label }}</a>
+            </li>
+          </ul>
 
     </nav>
   
