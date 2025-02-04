@@ -1,7 +1,4 @@
-export interface PersonalInfo {
-    name: string;
-    position: string;
-  }
+
 
 export interface AboutData {
     personalInfo: {
@@ -20,6 +17,22 @@ export interface AboutData {
       softSkills: string[];
     };
   }
+  export interface PersonalInfo {
+    name: string;
+    position: string;
+  }
+
+  export interface About {
+    title: string;
+    description: string;
+  }
+  
+  export interface Skills{
+    languages: string[];
+    programmingLanguages: string[];
+    softSkills: string[];
+  }
+
   
   export interface Experience {
     company: string;
