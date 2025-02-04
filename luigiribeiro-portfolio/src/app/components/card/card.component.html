@@ -1,0 +1,24 @@
+
+<div class="position-bottom" [class.project]="data.type === 'project'" [class.blog]="data.type === 'blog'">
+    <div class="position-left" data-aos="fade-up">
+        <h4>{{ data.subtitle }}
+            <div *ngIf="data.type === 'project'" class="technologies" data-aos="fade-left">
+                <span *ngFor="let tech of data.technologies">{{ tech }}</span>
+            </div>
+            <div *ngIf="data.type === 'blog'" class="blog-meta" data-aos="fade-left">
+                <span>{{ data.publishDate }}</span>
+                <span *ngFor="let tag of data.tags">{{ tag }}</span>
+            </div>
+        </h4>
+    </div>
+    <div class="position-right">
+        <h3 data-aos="fade-left">{{ data.title }}</h3>
+        <p data-aos="fade-left">
+            {{ data.description }}
+        </p>
+        <div class="image tilt-element" data-aos="fade-left">
+            <img [src]="data.imagePath" [alt]="data.title">
+            <a *ngIf="data.type === 'project'" [href]="data.projectLink" target="_blank">View Project</a>
+        </div>
+    </div>
+</div>
