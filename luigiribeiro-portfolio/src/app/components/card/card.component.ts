@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CardData } from '../../models/card.model';
 import { CommonModule } from '@angular/common';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-card',
@@ -11,5 +12,14 @@ import { CommonModule } from '@angular/common';
 })
 export class CardComponent {
   @Input() data!: CardData;
-
+  
+  ngOnInit() {
+    
+    AOS.init();
+    console.log('CardComponent Initialized'); // Add this
+    console.log('Data:', this.data);
+  }
 }
+
+
+

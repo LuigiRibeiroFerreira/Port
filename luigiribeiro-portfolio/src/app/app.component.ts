@@ -7,7 +7,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { CreativityComponent } from './pages/creativity/creativity.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { trigger, transition, style, animate } from '@angular/animations';
-
+import AOS from 'aos';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -37,6 +37,7 @@ export class AppComponent implements OnInit {
   constructor(public globalService: GlobalService) {}
 
   ngOnInit() {
+    AOS.init();
     this.calculateSpacing(); // Calcula o espaçamento ao inicializar
     console.log(`Tema inicial: ${this.globalService.theme}`);
   }

@@ -4,6 +4,7 @@ import VanillaTilt from 'vanilla-tilt';
 import { CardData } from '../../models/card.model';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from '../card/card.component';
+import { Experience } from '../../models/about.model';
 
 @Component({
   selector: 'app-experiences',
@@ -13,9 +14,19 @@ import { CardComponent } from '../card/card.component';
   styleUrl: './experiences.component.css'
 })
 export class ExperiencesComponent {
-  @Input() experiences!: CardData[];
+  @Input() experiences!: Experience[]; // Raw data from parent
+  cardData!: CardData[]; // Transformed data for cards
   ngOnInit() {
     AOS.init();
+    // Transform experiences into CardData
+    this.cardData = this.experiences.map(exp => ({
+      type: 'experience',
+      title: exp.projectName,
+      subtitle: exp.company,
+      description: exp.description,
+      imagePath: exp.imagePath
+    }));
+    console.log('Card Data:', this.cardData); // Verify mapping
   }
   constructor(private elementRef: ElementRef) {}
 
