@@ -1,5 +1,5 @@
 export interface CardData {
-    type: 'experience' | 'project' | 'blog'; // Discriminator for styling/logic
+    type: 'experience' | 'project' | 'blog' | 'course'; // Discriminator for styling/logic
     title: string;
     subtitle?: string; // Company (experience) or Institution (project)
     description: string;

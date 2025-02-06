@@ -26,17 +26,20 @@
       {
         "institution": "Estácio",
         "name": "Ciência da computação",
-        "description": "(Atualmente)"
+        "description": "(Atualmente)",
+        "imagePath": "assets/Artmed.png"
       },
       {
         "institution": "Dio",
         "name": "Desenvolvimento Front-End com Angular",
-        "description": "Mastered Angular fundamentals, RxJS, and state management..."
+        "description": "Mastered Angular fundamentals, RxJS, and state management...",
+        "imagePath": "assets/Artmed.png"
       },
       {
-        "institution": "Fundação Bradesco",
+        "institution": "Bradesco",
         "name": "Curso de HTML Avançado",
-        "description": "Mastered Angular fundamentals, RxJS, and state management..."
+        "description": "Mastered Angular fundamentals, RxJS, and state management...",
+        "imagePath": "assets/Artmed.png"
       }
     ],
     "skills": {

@@ -45,4 +45,5 @@ export interface AboutData {
     institution: string;
     name: string;
     description: string;
+    imagePath: string;
   }

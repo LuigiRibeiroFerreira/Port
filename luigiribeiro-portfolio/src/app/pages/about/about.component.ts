@@ -7,11 +7,12 @@ import { ExperiencesComponent } from '../../components/experiences/experiences.c
 import { GlobalService } from '../../services/global.service';
 import { AboutContentService } from '../../services/content/about-content.service';
 import { AboutData } from '../../models/about.model';
+import { CoursesComponent } from '../../components/courses/courses.component';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [OceanComponent, WhoIAmComponent, IdentifyComponent, ExperiencesComponent, CommonModule],
+  imports: [OceanComponent, WhoIAmComponent, IdentifyComponent, ExperiencesComponent, CommonModule, CoursesComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })

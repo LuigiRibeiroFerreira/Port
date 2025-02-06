@@ -1,0 +1,11 @@
+<div class="courses">
+    <div class="position-top" data-aos="fade-up">
+        <h3>Cursos</h3>
+    </div>
+    <div class="list">
+            <app-card 
+            *ngFor="let card of cardData" 
+            [data]="card">
+        </app-card>        
+    </div>
+</div>
