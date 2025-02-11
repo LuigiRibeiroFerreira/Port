@@ -1,8 +1,4 @@
-.list{
-    display: flex;
-    flex-direction: column;
-    gap: var(--big-gap);
-}
+
 
 .image{
     width: 100%;

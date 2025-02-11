@@ -18,29 +18,30 @@
         "company": "Divex",
         "projectName": "PucRio",
         "description": "Desenvolvi OnePages para cursos da Puc-Rio, onde criei interfaces funcionais e visualmente atraentes. Mantive uma comunicação constante com a equipe da A+, alinhando requisitos, revisões e prazos, e assegurando que cada projeto fosse entregue no prazo e de acordo com altos padrões de qualidade.",
-        "imagePath": "assets/Artmed.png"
+        "imagePath": "assets/Pucrio.png"
       }
     
     ],
     "courses": [
       {
+        "institution": "Dio",
+        "name": "Formação Scrum Master Certification (Cursando)",
+        "description": "Aprendo os fundamentos desse framework leve e adaptativo, utilizado para solucionar problemas complexos de forma iterativa e incremental. O curso aborda a aplicação prática do Scrum na gestão de times e projetos, promovendo aprendizado contínuo, melhoria constante e proximidade com o cliente.",
+        "imagePath": "assets/Dio.png"
+      },
+      {
         "institution": "Estácio",
-        "name": "Ciência da computação",
-        "description": "(Atualmente)",
-        "imagePath": "assets/Artmed.png"
+        "name": "Ciência da computação (Cursando)",
+        "description": "Atualmente, estou cursando Ciências da Computação na Estácio, onde estudo desde fundamentos matemáticos até desenvolvimento de softwares para diversas plataformas. O curso abrange programação, banco de dados e sistemas operacionais, preparando-me para criar soluções tecnológicas inovadoras em um mercado de trabalho aquecido e com alta demanda por profissionais qualificados.",
+        "imagePath": "assets/Estacio.png"
       },
       {
         "institution": "Dio",
         "name": "Desenvolvimento Front-End com Angular",
-        "description": "Mastered Angular fundamentals, RxJS, and state management...",
-        "imagePath": "assets/Artmed.png"
-      },
-      {
-        "institution": "Bradesco",
-        "name": "Curso de HTML Avançado",
-        "description": "Mastered Angular fundamentals, RxJS, and state management...",
-        "imagePath": "assets/Artmed.png"
+        "description": "desenvolvi habilidades na criação de aplicações web modernas e responsivas, estudando conceitos como componentização, SPAs (Single Page Applications), boas práticas de organização e padronização de código. O aprendizado foi reforçado com projetos práticos, desafios de código e mentorias com especialistas do Banco PAN, proporcionando uma experiência alinhada às demandas do mercado.",
+        "imagePath": "assets/Dio.png"
       }
+      
     ],
     "skills": {
       "languages": ["English (Fluent)", "Portuguese (Native)"],
