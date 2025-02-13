@@ -1,10 +1,7 @@
 <div class="about">
-    <div *ngIf="globalService.theme === 'ocean'">
-        <app-ocean></app-ocean>
-      </div>
-      <app-identify [personalInfo]="aboutData.personalInfo"></app-identify>
-      <app-who-i-am ></app-who-i-am>
-      <app-experiences [experiences]="aboutData.experiences"></app-experiences>
-      <app-courses [courses]="aboutData.courses"></app-courses>
-      <app-skills [skills]="aboutData.skills"></app-skills>
+    <app-identify [personalInfo]="aboutData.personalInfo"></app-identify>
+    <app-who-i-am ></app-who-i-am>
+    <app-experiences [experiences]="aboutData.experiences"></app-experiences>
+    <app-courses [courses]="aboutData.courses"></app-courses>
+    <app-skills [skills]="aboutData.skills"></app-skills>
 </div>

@@ -1,13 +1,6 @@
 <div [ngClass]="theme" class="page">
   <div class="fake-header"></div>
   <app-header></app-header>
-  <div *ngIf="globalService.currentPage === 'About'" data-aos="zoom-in-left">
-    <app-about></app-about>
-  </div>
-  <div *ngIf="globalService.currentPage === 'Projects'" data-aos="zoom-in-left">
-    <app-projects></app-projects>
-  </div>
-  <div *ngIf="globalService.currentPage === 'Creativity'" data-aos="zoom-in-left">
-    <app-creativity></app-creativity>
-  </div>
+  <router-outlet></router-outlet>
+  
 </div>

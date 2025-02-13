@@ -16,7 +16,8 @@
     display: flex;
     gap: var(--medium-gap);
     flex-wrap: wrap;
-
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -26,3 +27,4 @@ p{
     border-radius: 5px;
   
 }
+

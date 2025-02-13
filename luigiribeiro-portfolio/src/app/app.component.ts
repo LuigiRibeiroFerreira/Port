@@ -4,7 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { GlobalService } from '../app/services/global.service';
 import { CommonModule } from '@angular/common';
 import { AboutComponent } from './pages/about/about.component';
-import { CreativityComponent } from './pages/creativity/creativity.component';
+
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { trigger, transition, style, animate } from '@angular/animations';
 import AOS from 'aos';
@@ -16,7 +16,6 @@ import AOS from 'aos';
     HeaderComponent,
     CommonModule,
     AboutComponent,
-    CreativityComponent,
     ProjectsComponent
   ],
   templateUrl: './app.component.html',

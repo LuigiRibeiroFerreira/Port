@@ -100,3 +100,17 @@ p{
     line-height: 1.25rem;
     font-weight: inherit;
 }
+.divider{
+    width: 85%;
+    height: 1px;
+    background-color: var(--color-header);
+    margin: auto;
+    margin-top: var(--big-gap);
+}
+.divider2{
+    width: 85%;
+    height: 1px;
+    background-color: var(--color-header);
+    margin: auto;
+    
+}

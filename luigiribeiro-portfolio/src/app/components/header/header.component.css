@@ -26,6 +26,7 @@ img{
 
 }
 .header__nav{
+    
     display: flex;
     justify-content: space-between;
     
@@ -40,7 +41,8 @@ ul{
     padding: 0;
 }
 
-button{
+a{
+    position: relative;
     color: var(--color-secondary);
     font-size: .875rem;
     line-height: 1.25rem;
@@ -51,9 +53,13 @@ button{
     border-radius: 9999px;
     padding: .5rem 1rem;
     background: transparent;
+    transition: all 0.3s ease;
+    background: linear-gradient(var(--color-page), var(--color-page)) no-repeat;
+    background-size: 0% 100%;
 }
 
-button:hover{
+
+a:hover{
     color: var(--color-text);
 }
   
@@ -62,6 +68,18 @@ button:hover{
     display: flex;
     align-items: center;
 }
-.current-page{
-    background-color:var(--color-page) ;
+.active {
+    background-size: 100% 100%;
+    color: var(--color-text) !important;
+    
+}
+.nav-highlight {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 3px;
+    background: var(--color-text);
+    border-radius: 2px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
 }

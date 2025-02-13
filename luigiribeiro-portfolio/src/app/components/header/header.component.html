@@ -1,20 +1,26 @@
 <header class="header">
     <!-- Logo à esquerda -->
     <div class="header__logo">
-      <img src="/profile.png" alt="profile" />
+      <a routerLink="/">
+        <img src="/profile.png" alt="profile" />
+      </a>
     </div>
   
     <!-- Navegação centralizada -->
     <nav class="header__nav">
+      <div class="nav-highlight"></div>
         <ul>
             <li *ngFor="let link of headerData.navLinks">
-              <a >{{ link.label }}</a>
+              <a [routerLink]="link.path" 
+              routerLinkActive="active" 
+              [routerLinkActiveOptions]="{ exact: true }"
+              >{{ link.label }}</a>
             </li>
           </ul>
 
     </nav>
   
-    <!-- Botões à direita para alternar tema e idioma -->
+    <!-- Botão à direita para alternar tema-->
     <div class="header__controls">
       
       <app-theme-switch></app-theme-switch>
