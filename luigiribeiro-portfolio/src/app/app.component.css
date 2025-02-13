@@ -12,3 +12,13 @@
 .page{
     background-color: var(--color-bg)
 }
+
+.fake-footer {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 52px; 
+    background-color: var(--color-bg);
+    z-index: -1; 
+}

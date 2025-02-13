@@ -3,9 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { GlobalService } from '../app/services/global.service';
 import { CommonModule } from '@angular/common';
-import { AboutComponent } from './pages/about/about.component';
-
-import { ProjectsComponent } from './pages/projects/projects.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { trigger, transition, style, animate } from '@angular/animations';
 import AOS from 'aos';
 @Component({
@@ -15,8 +13,8 @@ import AOS from 'aos';
     RouterOutlet,
     HeaderComponent,
     CommonModule,
-    AboutComponent,
-    ProjectsComponent
+
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],

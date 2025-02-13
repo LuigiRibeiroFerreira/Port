@@ -73,13 +73,3 @@ a:hover{
     color: var(--color-text) !important;
     
 }
-.nav-highlight {
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    height: 3px;
-    background: var(--color-text);
-    border-radius: 2px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: -1;
-}

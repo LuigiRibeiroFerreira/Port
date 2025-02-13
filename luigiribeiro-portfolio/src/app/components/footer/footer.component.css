@@ -1,0 +1,71 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-header);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    height: 52px;
+    align-items: center;
+ 
+}
+
+.social-link {
+    display: inline-block;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20 px;
+    filter: invert(60%); /* Adjust based on your theme colors */
+}
+
+.social-link:hover .social-icon {
+    filter: invert(100%);
+    transform: translateY(-2px);
+}
+
+/* Alternative color control (better for colored icons) */
+.social-icon path {
+    fill: var(--color-secondary);
+    transition: fill 0.3s ease;
+}
+
+.social-link:hover path {
+    fill: var(--color-text);
+}
+
+.footer__language button {
+    background: none;
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer__language button:hover {
+    border-color: var(--color-text);
+    color: var(--color-text);
+}
+
+.footer__mid{
+    width: 70%;
+}
+.footer__social{
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
