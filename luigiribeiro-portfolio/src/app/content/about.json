@@ -44,8 +44,10 @@
       
     ],
     "skills": {
-      "languages": ["English (Fluent)", "Portuguese (Native)"],
-      "programmingLanguages": ["JavaScript/TypeScript", "Python", "Java"],
-      "softSkills": ["Team Collaboration", "Problem Solving", "Agile Methodology"]
+      "uiStyling": ["HTML", "CSS"],
+      "logicFunctionality": ["JavaScript", "TypeScript", "C++", "Node.js"],
+      "frameworksLibraries": ["Angular", "React", "Vue.js"],
+      "collaborationTools": ["Git", "GitHub", "Trello", "Slack"],
+      "softSkills": ["Trabalho em equipe", "Resolução criativa de problemas", "Dedicação e comprometimento", "Aprendizado rápido de novas tecnologias", "Boa comunicação interpessoal"]
     }
-  }
+}

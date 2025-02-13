@@ -8,11 +8,12 @@ import { GlobalService } from '../../services/global.service';
 import { AboutContentService } from '../../services/content/about-content.service';
 import { AboutData } from '../../models/about.model';
 import { CoursesComponent } from '../../components/courses/courses.component';
+import { SkillsComponent } from '../../components/skills/skills.component';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [OceanComponent, WhoIAmComponent, IdentifyComponent, ExperiencesComponent, CommonModule, CoursesComponent],
+  imports: [OceanComponent, WhoIAmComponent, IdentifyComponent, ExperiencesComponent, CommonModule, CoursesComponent, SkillsComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })

@@ -11,11 +11,7 @@ export interface AboutData {
     };
     experiences: Experience[];
     courses: Course[];
-    skills: {
-      languages: string[];
-      programmingLanguages: string[];
-      softSkills: string[];
-    };
+    skills: Skills;
   }
   export interface PersonalInfo {
     name: string;
@@ -28,8 +24,10 @@ export interface AboutData {
   }
   
   export interface Skills{
-    languages: string[];
-    programmingLanguages: string[];
+    uiStyling: string[];     
+    logicFunctionality: string[]; 
+    frameworksLibraries: string[]; 
+    collaborationTools: string[]; 
     softSkills: string[];
   }
 

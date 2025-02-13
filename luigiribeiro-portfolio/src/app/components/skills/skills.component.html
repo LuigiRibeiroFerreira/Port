@@ -1,0 +1,72 @@
+
+<div class="skills">
+    <div class="position-top" data-aos="fade-up">
+      <h3>Skills</h3>
+    </div>
+  
+    <div class="list">
+        <div class="position-bottom">
+
+            <div class="position-left" data-aos="fade-up">
+                <h4>UI & Styling</h4>
+            </div>
+            <div class="position-right" data-aos="fade-left">
+                <div class="skills-list">
+                    <p *ngFor="let uiStyling of skills.uiStyling">{{ uiStyling }}</p>
+                </div>       
+        </div>
+            
+        </div>
+        <div class="position-bottom">
+
+            <div class="position-left" data-aos="fade-up">
+                <h4>Logic & Functionality</h4>
+            </div>
+            <div class="position-right" data-aos="fade-left">
+                <div class="skills-list">
+                    <p *ngFor="let logicFunctionality of skills.logicFunctionality">{{ logicFunctionality }}</p>    
+        
+                </div>
+            </div>
+        </div>
+        <div class="position-bottom">
+
+            <div class="position-left" data-aos="fade-up">
+                <h4>softSkills</h4>
+            </div>
+            <div class="position-right" data-aos="fade-left">
+                <div class="skills-list">
+                    <p *ngFor="let frameworksLibraries of skills.frameworksLibraries">{{ frameworksLibraries }}</p>    
+            
+                </div>
+            </div>   
+        </div>
+        <div class="position-bottom">
+
+            <div class="position-left" data-aos="fade-up">
+                <h4>softSkills</h4>
+            </div>
+            
+            <div class="position-right" data-aos="fade-left">   
+                <div class="skills-list">
+                    <p *ngFor="let collaborationTool of skills.collaborationTools">{{ collaborationTool }}</p>    
+            
+                </div>
+            </div>
+        </div>
+        <div class="position-bottom">
+
+            <div class="position-left" data-aos="fade-up">
+                <h4>softSkills</h4>
+            </div>
+            <div class="position-right" data-aos="fade-left">  
+                <div class="skills-list">
+                    <p *ngFor="let softSkill of skills.softSkills">{{ softSkill }}</p>  
+                </div>   
+            </div>
+            
+        </div>
+    </div>    
+</div>                      
+        
+
