@@ -1,19 +1,19 @@
 <footer class="footer">
-    <!-- Left section (placeholder for future content) -->
+    <!-- Left -->
      
     <div class="footer__language">
-        <button>
-            
+        <button (click)="toggleLanguage()">
+            <span [class.flip]="isFlipping">{{ isEnglish ? 'en' : 'pt' }}</span>
         </button>
     </div>
     
 
-    <!-- Middle - Social Icons -->
+    <!-- Middle -->
     <div class="footer__mid">
         <p></p>
     </div>
 
-    <!-- Right - Language Selector -->
+    <!-- Right -->
     <div class="footer__social">
         
         <a href="https://www.linkedin.com/in/luigi-ribeiro-ferreira-163085224/" target="_blank" class="social-link">
