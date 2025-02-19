@@ -48,16 +48,7 @@ a{
     
 }
 
-.ocean-theme {
-    --color-header: rgba(20, 28, 40, 0.9); 
-    --color-bg: #0c101a; 
-    --color-page: #0a0e15; 
-    --color-text: #d1d9e6; 
-    --color-accent: #e94560; 
-    --color-primary: #4a90e2; 
-    --color-secondary: #5a6370; 
-    --color-switch: #e94560; 
-}
+
 
 
 
@@ -76,6 +67,7 @@ h4{
 .position-bottom{
     display: flex;
     z-index: 2;
+    gap: 3%;
 }
 
 .position-left{

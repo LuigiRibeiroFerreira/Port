@@ -24,7 +24,7 @@ export class CoursesComponent {
       title: course.name,
       subtitle: course.institution,
       description: course.description,
-      imagePath: course.imagePath // Add this to your Course interface
+      imagePath: course.imagePath 
     }));
   }
 }

@@ -1,0 +1,8 @@
+.projects{
+    background-color: var(--color-bg);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--big-gap);
+    
+}

@@ -10,9 +10,9 @@
       
       <!-- Technologies (for projects) -->
       <div *ngIf="data.type === 'project'" class="technologies" data-aos="fade-left">
-        <span *ngFor="let tech of data.technologies">{{ tech }}</span>
+        <p *ngFor="let tech of data.technologies">{{ tech }}</p>
       </div>
-  
+      <a  class="link" target="_blank" *ngIf="data.type === 'project'" [href]="data.projectLink"><span>Veja o projeto</span></a>
       <!-- Blog Meta (for articles) -->
       <div *ngIf="data.type === 'blog'" class="blog-meta" data-aos="fade-left">
         <span>{{ data.publishDate }}</span>
@@ -22,8 +22,9 @@
       <!-- Image (common to all) -->
       <div data-aos="fade-left" class="image tilt-element" data-aos="fade-left">
         <img [src]="data.imagePath" [alt]="data.title">
-        <a *ngIf="data.type === 'project'" [href]="data.projectLink">View Project</a>
+        
       </div>
+      
     </div>
 </div>
 <div class="divider"></div>
