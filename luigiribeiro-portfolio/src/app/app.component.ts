@@ -5,6 +5,7 @@ import { GlobalService } from '../app/services/global.service';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
 import { trigger, transition, style, animate } from '@angular/animations';
+
 import AOS from 'aos';
 @Component({
   selector: 'app-root',

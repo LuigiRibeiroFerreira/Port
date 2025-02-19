@@ -1,10 +1,12 @@
 import { Component, OnInit, ElementRef, AfterViewInit, Input} from '@angular/core';
 import AOS from 'aos';
-import VanillaTilt from 'vanilla-tilt';
+
 import { CardData } from '../../models/card.model';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from '../card/card.component';
 import { Experience } from '../../models/about.model';
+import { AboutData } from '../../models/about.model';
+import { AboutContentService } from '../../services/content/about-content.service';
 
 @Component({
   selector: 'app-experiences',
@@ -16,8 +18,12 @@ import { Experience } from '../../models/about.model';
 export class ExperiencesComponent {
   @Input() experiences!: Experience[]; // Raw data from parent
   cardData!: CardData[]; // Transformed data for cards
+  aboutData!:AboutData
+
+  constructor(private aboutService: AboutContentService) {}
   ngOnInit() {
     AOS.init();
+    this.aboutData = this.aboutService.getAboutData();
     // Transform experiences into CardData
     this.cardData = this.experiences.map(exp => ({
       type: 'experience',
@@ -28,17 +34,6 @@ export class ExperiencesComponent {
     }));
     console.log('Card Data:', this.cardData); // Verify mapping
   }
-  constructor(private elementRef: ElementRef) {}
-
-  ngAfterViewInit() {
-    const tiltElements = this.elementRef.nativeElement.querySelectorAll('.tilt-element');
-    VanillaTilt.init(tiltElements, {
-      max: 10,
-      speed: 400,
-      transition:     true, 
-      scale: 1.03,
-
-    });
-  }
+  
 
 }

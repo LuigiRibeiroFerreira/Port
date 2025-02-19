@@ -20,9 +20,5 @@ export class ThemeSwitchComponent {
   }
 
 
-  toggleLanguage() {
-    const newLanguage = this.globalService.language === 'pt' ? 'en' : 'pt';
-    this.globalService.setLanguage(newLanguage);
-    // Aqui você pode adicionar lógica para atualizar textos ou componentes com base na nova linguagem
-  }
+  
 }

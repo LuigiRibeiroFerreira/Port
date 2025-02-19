@@ -1,6 +1,7 @@
 
 
 export interface AboutData {
+  titles: Titles;
     personalInfo: {
       name: string;
       position: string;
@@ -24,13 +25,22 @@ export interface AboutData {
   }
   
   export interface Skills{
-    uiStyling: string[];     
+    titleUiStyling: string
+    uiStyling: string[];
+    titleLogicFunctionality: string     
     logicFunctionality: string[]; 
-    frameworksLibraries: string[]; 
+    titleFrameworksLibraries: string;
+    frameworksLibraries: string[];
+    titleCollaborationTools: string;
     collaborationTools: string[]; 
     softSkills: string[];
   }
 
+  export interface Titles{
+    experiences: string;
+    courses: string;
+    skills: string;
+  }
   
   export interface Experience {
     company: string;

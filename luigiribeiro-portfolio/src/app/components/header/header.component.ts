@@ -6,6 +6,8 @@ import { CommonModule } from '@angular/common';
 import { HeaderContentService } from '../../services/content/header-content.service'; 
 import { HeaderData } from '../../models/header.model';
 
+
+
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -15,9 +17,17 @@ import { HeaderData } from '../../models/header.model';
 })
 export class HeaderComponent implements OnInit{
   constructor(private globalService: GlobalService, private headerContentService: HeaderContentService) {}
-  headerData!: HeaderData;
-  ngOnInit(): void {
-    this.headerData = this.headerContentService.getHeaderData();
+  headerData: any = {};
+  ngOnInit() {
+    this.headerContentService.getHeaderData().subscribe(
+      (data) => {
+        console.log('Dados do Header recebidos:', data);
+        this.headerData = data;
+      },
+      (error) => {
+        console.error('Erro ao buscar Header:', error);
+      }
+    );
   }
   
 }
