@@ -32,7 +32,7 @@ export class ExperiencesComponent {
       description: exp.description,
       imagePath: exp.imagePath
     }));
-    console.log('Card Data:', this.cardData); // Verify mapping
+    
   }
   
 

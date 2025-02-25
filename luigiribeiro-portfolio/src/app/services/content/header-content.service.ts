@@ -1,26 +1,39 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject,switchMap,map, tap } from 'rxjs';
+
+import { GlobalService } from '../global.service';
 import { HeaderData } from '../../models/header.model';
 import { BaseContentService } from './content.service';
 import headerData from '../../content/header.json';
-import { GlobalService } from '../global.service';
-import { HttpClient } from '@angular/common/http';
 import {inject } from '@angular/core';
-import { switchMap } from 'rxjs';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HeaderContentService {
-  private http = inject(HttpClient);
-  private globalService = inject(GlobalService);
+  private headerData$ = new BehaviorSubject<any>(null);
+  
+  constructor(
+    private http: HttpClient,
+    private globalService: GlobalService
+  ) {
+    this.initialize();
+  }
 
-  getHeaderData(): Observable<any> {
+  private initialize() {
+    this.http.get('/content/header.json').pipe(
+      tap(data => this.headerData$.next(data)),
+      switchMap(() => this.globalService.language$)
+    ).subscribe();
+  }
+
+  getHeaderData() {
     return this.globalService.language$.pipe(
-      switchMap(lang => {
-        console.log(`Idioma atual: ${lang}`); // Verifica se o idioma está certo
-        return this.http.get(`../../content/${lang}/header.json`);
-      })
+      switchMap(lang => this.headerData$.pipe(
+        map(data => data?.[lang] || {})
+      ))
     );
   }
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { GlobalService } from '../../services/global.service';
 @Component({
   selector: 'app-footer',
   standalone: true,
@@ -9,14 +9,21 @@ import { Component } from '@angular/core';
   
 })
 export class FooterComponent {
-  isEnglish = false;
+  language: 'pt' | 'en' = 'pt';
   isFlipping = false;
+  constructor(private globalService: GlobalService) {
+    
+    this.globalService.language$.subscribe(lang => {
+      this.language = lang;
+    });
+  }
 
   toggleLanguage() {
     this.isFlipping = true;
 
     setTimeout(() => {
-      this.isEnglish = !this.isEnglish;
+      const newLang = this.language === 'pt' ? 'en' : 'pt';
+      this.globalService.setLanguage(newLang); // Atualiza a linguagem global
     }, 300); 
 
     setTimeout(() => {

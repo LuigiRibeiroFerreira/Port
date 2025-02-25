@@ -17,8 +17,7 @@ export class CardComponent {
   ngOnInit() {
     
     AOS.init();
-    console.log('CardComponent Initialized'); // Add this
-    console.log('Data:', this.data);
+    
   }
   constructor(private elementRef: ElementRef) {}
 

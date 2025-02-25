@@ -1,4 +1,4 @@
-{
+{ "pt":{
     "title": "Luigi Ferreira",
     "navLinks": [
       { "label": "Início", "path": "/" },
@@ -6,4 +6,14 @@
       { "label": "Blog", "path": "/blog" },
       { "label": "Projetos", "path": "/projects" }      
     ]
+  },
+  "en":{
+    "title": "Luigi Ferreira",
+    "navLinks": [
+      { "label": "Home", "path": "/" },
+      { "label": "About Me", "path": "/about" },
+      { "label": "Blog", "path": "/blog" },
+      { "label": "Projects", "path": "/projects" }      
+    ]
   }
+}

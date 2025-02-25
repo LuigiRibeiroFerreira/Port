@@ -16,18 +16,15 @@ import { HeaderData } from '../../models/header.model';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit{
-  constructor(private globalService: GlobalService, private headerContentService: HeaderContentService) {}
+  constructor(public globalService: GlobalService, private headerContentService: HeaderContentService) {
+  
+  }
   headerData: any = {};
+  
   ngOnInit() {
-    this.headerContentService.getHeaderData().subscribe(
-      (data) => {
-        console.log('Dados do Header recebidos:', data);
-        this.headerData = data;
-      },
-      (error) => {
-        console.error('Erro ao buscar Header:', error);
-      }
-    );
+    this.headerContentService.getHeaderData().subscribe(data => {
+      this.headerData = data;
+    });
   }
   
 }
