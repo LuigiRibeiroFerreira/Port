@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, AfterViewInit, Input} from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges} from '@angular/core';
 import AOS from 'aos';
 
 import { CardData } from '../../models/card.model';
@@ -15,16 +15,18 @@ import { AboutContentService } from '../../services/content/about-content.servic
   templateUrl: './experiences.component.html',
   styleUrl: './experiences.component.css'
 })
-export class ExperiencesComponent {
-  @Input() experiences!: Experience[]; // Raw data from parent
-  cardData!: CardData[]; // Transformed data for cards
-  aboutData!:AboutData
+export class ExperiencesComponent implements OnChanges {
+  @Input() experiences: Experience[] = [];
+  @Input() sectionTitle = '';
+  cardData: CardData[] = [];
 
-  constructor(private aboutService: AboutContentService) {}
-  ngOnInit() {
-    AOS.init();
-    this.aboutData = this.aboutService.getAboutData();
-    // Transform experiences into CardData
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['experiences']) {
+      this.processExperiences();
+    }
+  }
+
+  private processExperiences() {
     this.cardData = this.experiences.map(exp => ({
       type: 'experience',
       title: exp.projectName,
@@ -32,8 +34,7 @@ export class ExperiencesComponent {
       description: exp.description,
       imagePath: exp.imagePath
     }));
-    
-  }
-  
 
+    setTimeout(() => AOS.refresh(), 0);
+  }
 }

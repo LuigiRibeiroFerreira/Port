@@ -1,6 +1,7 @@
 
 
 export interface AboutData {
+  lang: string ;
   titles: Titles;
     personalInfo: {
       name: string;

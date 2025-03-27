@@ -12,14 +12,17 @@ import { AboutContentService } from '../../services/content/about-content.servic
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent {
-  @Input() skills!: Skills; 
-  aboutData!:AboutData
-
-  constructor(private aboutService: AboutContentService) {}
-
-  ngOnInit() {
-      
-      this.aboutData = this.aboutService.getAboutData();
-  }
-      
+  @Input() skills: Skills = {
+    titleUiStyling: '',
+    uiStyling: [],
+    titleLogicFunctionality: '',
+    logicFunctionality: [],
+    titleFrameworksLibraries: '',
+    frameworksLibraries: [],
+    titleCollaborationTools: '',
+    collaborationTools: [],
+    softSkills: []
+  };
+  
+  @Input() sectionTitle = '';
 }

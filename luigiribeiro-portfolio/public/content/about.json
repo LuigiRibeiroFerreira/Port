@@ -1,4 +1,4 @@
-{   
+{ "pt":{
     "titles":{
       "experiences":"Experiências",
       "courses":"Cursos",
@@ -61,4 +61,66 @@
       "collaborationTools": ["Git", "GitHub", "Trello", "Slack"],
       "softSkills": ["Trabalho em equipe", "Resolução criativa de problemas", "Dedicação e comprometimento", "Aprendizado rápido de novas tecnologias", "Boa comunicação interpessoal"]
     }
+  },
+  "en": {
+    "titles": {
+      "experiences": "Experiences",
+      "courses": "Courses",
+      "skills": "Skills"
+    },
+
+    "personalInfo": {
+      "name": "Luigi Ribeiro Ferreira",
+      "position": "Developer"
+    },
+    "about": {
+      "title": "Who I Am",
+      "description": "I am a front-end developer who loves everything related to technology. I enjoy working in teams and tackling challenges creatively. I'm always looking to learn something new and improve my skills. I believe that learning never ends, and each project is an opportunity to grow."
+    },
+    "experiences": [
+      {
+        "company": "Divex",
+        "projectName": "Artmed+",
+        "description": "I develop OnePages for medical courses, creating intuitive and effective interfaces. I work closely with the team to capture and implement specific requirements and actively participate in reviews and feedback, always striving to improve processes and final results.",
+        "imagePath": "assets/Artmed.png"
+      },
+      {
+        "company": "Divex",
+        "projectName": "PucRio",
+        "description": "I developed OnePages for Puc-Rio courses, creating functional and visually appealing interfaces. I maintained constant communication with the A+ team, aligning requirements, reviews, and deadlines, ensuring each project was delivered on time and met high-quality standards.",
+        "imagePath": "assets/Pucrio.png"
+      }
+    ],
+    "courses": [
+      {
+        "institution": "Dio",
+        "name": "Scrum Master Certification Training (In Progress)",
+        "description": "I am learning the fundamentals of this lightweight and adaptive framework, used to solve complex problems iteratively and incrementally. The course covers the practical application of Scrum in team and project management, promoting continuous learning, constant improvement, and close customer collaboration.",
+        "imagePath": "assets/Dio.png"
+      },
+      {
+        "institution": "Estácio",
+        "name": "Computer Science (In Progress)",
+        "description": "I am currently studying Computer Science at Estácio, covering everything from mathematical foundations to software development for various platforms. The course includes programming, databases, and operating systems, preparing me to create innovative technological solutions in a growing job market with high demand for skilled professionals.",
+        "imagePath": "assets/Estacio.png"
+      },
+      {
+        "institution": "Dio",
+        "name": "Front-End Development with Angular",
+        "description": "I developed skills in building modern and responsive web applications, studying concepts such as componentization, SPAs (Single Page Applications), best practices in code organization and standardization. The learning process was reinforced with hands-on projects, coding challenges, and mentoring sessions with Banco PAN specialists, providing an experience aligned with market demands.",
+        "imagePath": "assets/Dio.png"
+      }
+    ],
+    "skills": {
+      "titleUiStyling": "Interface and Styling",
+      "uiStyling": ["HTML", "CSS"],
+      "titleLogicFunctionality": "Logic and Functionality",
+      "logicFunctionality": ["JavaScript", "TypeScript", "C++", "Node.js"],
+      "titleFrameworksLibraries": "Frameworks and Libraries",
+      "frameworksLibraries": ["Angular", "React", "Vue.js"],
+      "titleCollaborationTools": "Version Control and Collaboration",
+      "collaborationTools": ["Git", "GitHub", "Trello", "Slack"],
+      "softSkills": ["Teamwork", "Creative problem-solving", "Dedication and commitment", "Fast learning of new technologies", "Good interpersonal communication"]
+    }
+  }
 }

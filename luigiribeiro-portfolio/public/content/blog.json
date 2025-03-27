@@ -1,0 +1,28 @@
+{
+    "pt": {
+      "posts": [
+        {
+          "title": "Descomplicando o Gi𝐭",
+          "subtitle": "Um guia simples dos comandos mais usados",
+          "imagePath": "assets/Git.jpg",
+          "summary": "Aprenda de forma prática como iniciar um repositório, rastrear mudanças, enviar commits e muito mais!",
+          "content": "Conteúdo completo do artigo em HTML...",
+          "date": "2024-03-20",
+          "tags": ["Angular", "Frontend"]
+        }
+      ]
+    },
+    "en": {
+      "posts": [
+        {
+          "title": "Simplifying Git",
+          "subtitle": "A simple guide to the most used commands!",
+          "imagePath": "assets/Git.jpg",
+          "summary": "Learn step by step how to start a repository, track changes, commit, and more!",
+          "content": "Full article content in HTML...",
+          "date": "2024-03-20",
+          "tags": ["Angular", "Frontend"]
+        }
+      ]
+    }
+  }

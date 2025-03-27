@@ -3,8 +3,9 @@ import { RouterModule } from '@angular/router';
 import { ThemeSwitchComponent } from '../theme-switch/theme-switch.component';
 import { GlobalService } from '../../services/global.service';
 import { CommonModule } from '@angular/common';
-import { HeaderContentService } from '../../services/content/header-content.service'; 
-import { HeaderData } from '../../models/header.model';
+import { HeaderContentService } from '../../services/content/header-content.service';
+import { Observable } from 'rxjs'; 
+
 
 
 
@@ -15,16 +16,10 @@ import { HeaderData } from '../../models/header.model';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent implements OnInit{
-  constructor(public globalService: GlobalService, private headerContentService: HeaderContentService) {
-  
+export class HeaderComponent {
+  headerData$: Observable<any>;
+
+  constructor(private headerContentService: HeaderContentService) {
+    this.headerData$ = this.headerContentService.getHeaderData();
   }
-  headerData: any = {};
-  
-  ngOnInit() {
-    this.headerContentService.getHeaderData().subscribe(data => {
-      this.headerData = data;
-    });
-  }
-  
 }

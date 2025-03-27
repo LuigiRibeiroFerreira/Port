@@ -1,4 +1,4 @@
-import { Component,OnInit,Input } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { CardData } from '../../models/card.model';
 import { Project } from '../../models/projects.model';
 import { CommonModule } from '@angular/common';
@@ -12,22 +12,29 @@ import AOS from 'aos';
   templateUrl: './developments.component.html',
   styleUrl: './developments.component.css'
 })
-export class DevelopmentsComponent implements OnInit {
-  @Input() projects!: Project[]; // Input from parent component
-  cardData!: CardData[];
+export class DevelopmentsComponent implements OnChanges {
+  @Input() projects: Project[] = [];
+  @Input() sectionTitle = '';
+  cardData: CardData[] = [];
 
-  ngOnInit() {
-    AOS.init();
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['projects']) {
+      this.processProjects();
+    }
+  }
+
+  private processProjects() {
     this.cardData = this.projects.map(project => ({
       type: 'project',
       title: project.title,
       subtitle: project.subtitle,
       description: project.description,
       imagePath: project.imagePath,
-      // Additional project-specific fields
       technologies: project.technologies,
       projectLink: project.projectLink,
       codeLink: project.codeLink
     }));
+
+    setTimeout(() => AOS.refresh(), 0);
   }
 }

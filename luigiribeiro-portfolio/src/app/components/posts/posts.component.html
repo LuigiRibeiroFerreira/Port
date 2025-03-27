@@ -1,0 +1,12 @@
+<section class="blog-section">
+    <div class="position-top" data-aos="fade-up">
+      <h3>{{ sectionTitle }}</h3>
+    </div>
+    
+    <div class="list">
+      <app-card 
+        *ngFor="let card of cardData"
+        [data]="card">
+      </app-card>
+    </div>
+</section>

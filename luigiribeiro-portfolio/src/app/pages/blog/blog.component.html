@@ -1,1 +1,6 @@
-<p>blog works!</p>
+<div class="blog">
+    <app-posts
+      [posts]="(blogData$ | async)?.posts || []"
+      [sectionTitle]="(blogData$ | async)?.titles?.blog">
+    </app-posts>
+</div>

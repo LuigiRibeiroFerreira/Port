@@ -1,20 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject,switchMap,map, tap } from 'rxjs';
-
+import { BehaviorSubject, switchMap, map, tap } from 'rxjs';
 import { GlobalService } from '../global.service';
-import { HeaderData } from '../../models/header.model';
-import { BaseContentService } from './content.service';
-import headerData from '../../content/header.json';
-import {inject } from '@angular/core';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HeaderContentService {
   private headerData$ = new BehaviorSubject<any>(null);
-  
+
   constructor(
     private http: HttpClient,
     private globalService: GlobalService

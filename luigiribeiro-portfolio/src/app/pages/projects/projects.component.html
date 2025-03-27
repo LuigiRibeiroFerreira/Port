@@ -1,3 +1,6 @@
 <div class="projects">
-<app-developments [projects]="projectsData.projects"></app-developments>
+    <app-developments 
+      [projects]="(projectsData$ | async)?.projects || []"
+      [sectionTitle]="(projectsData$ | async)?.sectionTitle">
+    </app-developments>
 </div>

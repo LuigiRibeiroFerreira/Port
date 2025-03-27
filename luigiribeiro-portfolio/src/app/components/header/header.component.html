@@ -1,29 +1,24 @@
 <header class="header">
+  <div class="header__logo">
+    <a routerLink="/">
+      <img src="/profile.png" alt="profile" />
+    </a>
+  </div>
 
-    <div class="header__logo">
-      <a routerLink="/">
-        <img src="/profile.png" alt="profile" />
-      </a>
-    </div>
-  
+  <nav class="header__nav">
+    <ul>
+      <!-- Use async pipe to handle the observable -->
+      <li *ngFor="let link of (headerData$ | async)?.navLinks">
+        <a [routerLink]="link.path"
+           routerLinkActive="active"
+           [routerLinkActiveOptions]="{ exact: true }">
+          {{ link.label }}
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-    <nav class="header__nav">
-    
-        <ul>
-            <li *ngFor="let link of headerData?.navLinks">
-              <a [routerLink]="link.path" 
-              routerLinkActive="active" 
-              [routerLinkActiveOptions]="{ exact: true }"
-              >{{ link.label }}</a>
-            </li>
-          </ul>
-
-    </nav>
-  
-
-    <div class="header__controls">
-      
-      <app-theme-switch></app-theme-switch>
-    </div>
+  <div class="header__controls">
+    <app-theme-switch></app-theme-switch>
+  </div>
 </header>
-  

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges,SimpleChanges } from '@angular/core';
 import {CardData} from '../../models/card.model';
 import { Course } from '../../models/about.model';
 import { CommonModule } from '@angular/common';
@@ -14,25 +14,26 @@ import { AboutContentService } from '../../services/content/about-content.servic
   templateUrl: './courses.component.html',
   styleUrl: './courses.component.css'
 })
-export class CoursesComponent {
-  @Input() courses!: Course[]; // Input from parent (AboutComponent)
-  cardData!: CardData[]; // Data mapped for CardComponent
-  aboutData!:AboutData
+export class CoursesComponent implements OnChanges {
+  @Input() courses: Course[] = [];
+  @Input() sectionTitle = '';
+  cardData: CardData[] = [];
 
-  constructor(private aboutService: AboutContentService) {}
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['courses']) {
+      this.processCourses();
+    }
+  }
 
-  ngOnInit() {
-    AOS.init();
-
-    this.aboutData = this.aboutService.getAboutData();
-
-    // Transform courses into CardData format
+  private processCourses() {
     this.cardData = this.courses.map(course => ({
       type: 'course',
       title: course.name,
       subtitle: course.institution,
       description: course.description,
-      imagePath: course.imagePath 
+      imagePath: course.imagePath
     }));
+    
+    setTimeout(() => AOS.refresh(), 0); // Refresh AOS after data load
   }
 }

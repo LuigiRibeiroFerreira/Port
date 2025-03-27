@@ -1,7 +1,17 @@
+<!-- about.component.html -->
 <div class="about">
-    <app-identify [personalInfo]="aboutData.personalInfo"></app-identify>
-    <app-who-i-am ></app-who-i-am>
-    <app-experiences [experiences]="aboutData.experiences"></app-experiences>
-    <app-courses [courses]="aboutData.courses"></app-courses>
-    <app-skills [skills]="aboutData.skills"></app-skills>
+    <app-identify [personalInfo]="(aboutData$ | async)?.personalInfo"></app-identify>
+    <app-who-i-am></app-who-i-am>
+    <app-experiences 
+        [experiences]="(aboutData$ | async)?.experiences || []"
+        [sectionTitle]="(aboutData$ | async)?.titles?.experiences">
+    </app-experiences>
+    <app-courses 
+        [courses]="(aboutData$ | async)?.courses || []"
+        [sectionTitle]="(aboutData$ | async)?.titles?.courses">
+    </app-courses>
+    <app-skills 
+        [skills]="(aboutData$ | async)?.skills || {}"
+        [sectionTitle]="(aboutData$ | async)?.titles?.skills">
+    </app-skills>
 </div>

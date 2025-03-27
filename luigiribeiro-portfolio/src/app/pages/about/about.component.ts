@@ -5,10 +5,10 @@ import { WhoIAmComponent } from '../../components/who-i-am/who-i-am.component';
 import { IdentifyComponent } from '../../components/identify/identify.component';
 import { ExperiencesComponent } from '../../components/experiences/experiences.component';
 import { GlobalService } from '../../services/global.service';
-import { AboutContentService } from '../../services/content/about-content.service';
-import { AboutData } from '../../models/about.model';
 import { CoursesComponent } from '../../components/courses/courses.component';
 import { SkillsComponent } from '../../components/skills/skills.component';
+
+import { AboutContentService } from '../../services/content/about-content.service';
 
 @Component({
   selector: 'app-about',
@@ -17,17 +17,17 @@ import { SkillsComponent } from '../../components/skills/skills.component';
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
-export class AboutComponent implements OnInit{
+export class AboutComponent {
+
+  aboutData$: ReturnType<AboutContentService['getAboutData']>;
   currentTheme: 'light' | 'dark' | 'ocean';
-  aboutData!: AboutData;
 
-  constructor(public globalService: GlobalService, private aboutContentService: AboutContentService) {
+  constructor(
+    private aboutContentService: AboutContentService,
+    public globalService: GlobalService
+  ) {
+    // Initialize properties after injection
+    this.aboutData$ = this.aboutContentService.getAboutData();
     this.currentTheme = this.globalService.theme;
   }
-
-  ngOnInit() {
-    this.currentTheme = this.globalService.theme;
-    this.aboutData = this.aboutContentService.getAboutData(); 
-  }
-  
 }

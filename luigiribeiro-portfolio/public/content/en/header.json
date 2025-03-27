@@ -1,9 +1,0 @@
-{
-  "title": "Luigi Ferreira",
-  "navLinks": [
-    { "label": "Home", "path": "/" },
-    { "label": "About Me", "path": "/about" },
-    { "label": "Blog", "path": "/blog" },
-    { "label": "Projects", "path": "/projects" }      
-  ]
-}

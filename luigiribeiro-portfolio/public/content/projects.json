@@ -1,5 +1,6 @@
 
-{
+{ "pt":{
+  "sectionTitle":"Projetos",
     "projects": [
       {
         "type": "project",
@@ -52,4 +53,62 @@
         "codeLink": "#"
       }
     ]
+  },
+  "en": {
+    "sectionTitle":"Projects",
+    "projects": [
+      {
+        "type": "project",
+        "title": "Bitcoin Bank Dashboard",
+        "subtitle": "Bitcoin financial management platform",
+        "description": "Development of an admin panel for a bank operating with Bitcoin. The project consumes a local API to manage users and their data, as well as an external API for real-time updates on Bitcoin's buying and selling value. The application enables automatic conversion of deposited and withdrawn amounts from wallets, includes pagination for efficient data management, and offers CSV export functionality.",
+        "technologies": ["Vue.js", "JavaScript", "Node.js", "CSS"],
+        "imagePath": "assets/projects/bitcoin-bank.png",
+        "projectLink": "https://github.com/LuigiRibeiroFerreira/desafio-frontend/tree/Luigi-Ribeiro-Ferreira", 
+        "codeLink": "#"
+      },
+      {
+        "type": "project",
+        "title": "Pokédex React",
+        "subtitle": "Interactive Pokémon encyclopedia",
+        "description": "A complete Pokédex that consumes the public Pokémon API, allowing users to view the Pokémon list, add and remove from their personal Pokédex, and access individual details for each creature. The project features smooth page transitions and an intuitive interface for easy navigation. Developed as a team to ensure a seamless and interactive experience.",
+        "technologies": ["React", "Styled Components", "REST API", "JavaScript"],
+        "imagePath": "assets/pokedex-react.png",
+        "projectLink": "https://github.com/future4code/maryam-pokedex11",
+        "codeLink": "#"
+      },
+      {
+        "type": "project",
+        "title": "4Food: FutureEats",
+        "subtitle": "Online ordering platform",
+        "description": "A delivery platform similar to iFood, allowing user login, restaurant card display, profile and address editing, purchase history, shopping cart, and new user registration.",
+        "technologies": ["React.js", "JavaScript", "Styled Components"],
+        "imagePath": "assets/future-eats.png",
+        "projectLink": "https://github.com/future4code/maryam-labe-food8",
+        "codeLink": "#"
+      },
+      {
+        "type": "project",
+        "title": "Pokédex Vanilla",
+        "subtitle": "Pokédex with a focus on styling",
+        "description": "An interactive Pokédex that consumes the public Pokémon API, with a strong emphasis on visual presentation and refined design. The project provides a smooth experience for Pokémon lookup and discovery, using custom styling for an attractive interface.",
+        "technologies": ["JavaScript", "CSS", "HTML"],
+        "imagePath": "assets/pokedex-vanilla.png",
+        "projectLink": "https://github.com/LuigiRibeiroFerreira/js-developer-pokedex/tree/main",
+        "codeLink": "#"
+      },
+      {
+        "type": "project",
+        "title": "Snake Game Neon",
+        "subtitle": "Classic snake game with neon effects",
+        "description": "A modern version of the classic snake game, featuring a vibrant neon design and enhanced mechanics. The game includes a classic loop, high-score tracking using localStorage, visual effects like particles, and screen shake upon scoring, providing a dynamic and engaging experience.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "imagePath": "assets/Snake.png",
+        "projectLink": "#",
+        "codeLink": "#"
+      }
+    ]
   }
+
+
+}
