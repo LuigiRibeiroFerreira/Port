@@ -22,3 +22,13 @@
     background-color: var(--color-bg);
     z-index: -1; 
 }
+#global-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-bg); /* ou o nome da sua variável de fundo */
+    z-index: -1; /* Fica sempre atrás de tudo */
+    pointer-events: none; /* Não interfere nos cliques */
+}

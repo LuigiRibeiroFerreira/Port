@@ -15,6 +15,7 @@ import AOS from 'aos';
 export class DevelopmentsComponent implements OnChanges {
   @Input() projects: Project[] = [];
   @Input() sectionTitle = '';
+  @Input() linkText = '';
   cardData: CardData[] = [];
 
   ngOnChanges(changes: SimpleChanges) {

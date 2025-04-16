@@ -28,7 +28,7 @@ export class AboutContentService {
   getAboutData() {
     return this.globalService.language$.pipe(
       switchMap(lang => this.aboutData$.pipe(
-        map(data => data?.[lang] || {})  // Now properly typed
+        map(data => data?.[lang] || {}) 
       ))
     );
   }

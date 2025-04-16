@@ -1,0 +1,146 @@
+.hero {
+    height: 90vh;
+    min-height: 600px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--medium-gap);
+  
+    padding: 0 2rem;
+    text-align: center;
+    position: relative;
+  
+    background-color: var(--color-bg); /* escuro */
+    overflow: hidden;
+}
+  
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+  
+.hero p {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    max-width: 600px;
+    margin-top: 1rem;
+}
+  
+.hero-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.7s ease;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: rgb(227, 227, 227);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--color-accent);
+    color: white;
+  }
+  
+  .btn-outline {
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+  }
+  
+  .btn-outline:hover {
+    background-color: rgba(112, 112, 112, 0.635);
+    color: white;
+}
+/* Camada base compartilhada */
+.hero-bg-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  /* 💥 Pulsação Central */
+  .hero-bg-layer.pulse {
+    background: radial-gradient(circle at center, rgba(140, 86, 255, 0.15), transparent 70%);
+    animation: pulseBg 6s ease-in-out infinite;
+  }
+  
+  /* 🌈 Gradiente Fluido */
+  .hero-bg-layer.gradient {
+    background: linear-gradient(-45deg, #8c56ff33, #22222233, #8c56ff22, #11111133);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+  }
+  
+
+  .particles {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .particles::before, .particles::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(140, 86, 255, 0.2), transparent 70%);
+    animation: float 10s ease-in-out infinite;
+    border-radius: 50%;
+    filter: blur(80px);
+  }
+  
+  .particles::after {
+    left: 60%;
+    top: 10%;
+    animation-delay: 5s;
+  }
+  
+  /* 🔁 Animações */
+  @keyframes pulseBg {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.3;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.5;
+    }
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 0.3;
+    }
+    50% {
+      transform: translateY(-20px) scale(1.1);
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      opacity: 0.3;
+    }
+  }

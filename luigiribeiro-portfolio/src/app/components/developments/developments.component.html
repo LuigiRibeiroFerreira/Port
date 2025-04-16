@@ -7,7 +7,8 @@
   <div class="list">
     <app-card 
       *ngFor="let card of cardData"
-      [data]="card">
+      [data]="card"
+      [linkText] ="linkText">
     </app-card>
   </div>
 </section>

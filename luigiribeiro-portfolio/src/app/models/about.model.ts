@@ -18,6 +18,7 @@ export interface AboutData {
   export interface PersonalInfo {
     name: string;
     position: string;
+    words:string[];
   }
 
   export interface About {

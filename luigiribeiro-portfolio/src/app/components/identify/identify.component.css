@@ -9,3 +9,43 @@
     gap: var(--medium-gap);
     padding-top: 6rem;
 }
+.typing-container {
+    display: inline-flex;
+    align-items: center;
+    font-family: monospace;
+    font-size: 1rem;
+    height: 1.2em;
+    color: var(--color-secondary);
+  }
+  
+  .typed-word {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    transition: all 0.1s ease-out;
+  }
+  
+  .cursor {
+    margin-left: 0px;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 50%, 100% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0;
+    }
+  }
+  
+
+  
+  @media (max-width: 480px) {
+    .identify {
+      width: 100%;
+    }
+    .typing-container {
+        padding-left: 30px;
+      }
+  }

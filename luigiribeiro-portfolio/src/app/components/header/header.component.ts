@@ -18,8 +18,13 @@ import { Observable } from 'rxjs';
 })
 export class HeaderComponent {
   headerData$: Observable<any>;
+  isMenuOpen = false;
 
   constructor(private headerContentService: HeaderContentService) {
     this.headerData$ = this.headerContentService.getHeaderData();
+  }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 }

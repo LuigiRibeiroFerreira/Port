@@ -5,13 +5,19 @@
     </a>
   </div>
 
-  <nav class="header__nav">
+  <!-- Botão hamburguer -->
+  <button class="hamburger" (click)="toggleMenu()" [class.open]="isMenuOpen" aria-label="Abrir menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- Navegação com toggle -->
+  <nav class="header__nav" [class.open]="isMenuOpen">
     <ul>
-      <!-- Use async pipe to handle the observable -->
       <li *ngFor="let link of (headerData$ | async)?.navLinks">
         <a [routerLink]="link.path"
            routerLinkActive="active"
-           [routerLinkActiveOptions]="{ exact: true }">
+           [routerLinkActiveOptions]="{ exact: true }"
+           (click)="toggleMenu()">
           {{ link.label }}
         </a>
       </li>

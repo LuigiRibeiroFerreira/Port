@@ -1,0 +1,94 @@
+{
+    "page": "home",
+    "pt": {
+      "hero": {
+        "title": "Transformando ideias em interfaces criativas",
+        "subtitle": "Desenvolvedor full stack com foco em experiências visuais marcantes no front-end.",
+        "buttons": [
+          {
+            "label": "Conheça mais",
+            "path": "/about"
+          },
+          {
+            "label": "Projetos",
+            "path": "/projects"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "id": "about-preview",
+          "title": "Quem eu sou",
+          "text": "Desenvolvedor que une criatividade, código e boas práticas para criar soluções digitais modernas.",
+          "button": {
+            "label": "Saiba mais",
+            "path": "/about"
+          }
+        },
+        {
+          "id": "projects-preview",
+          "title": "Projetos em destaque",
+          "text": "Confira alguns dos projetos que desenvolvi com foco em design, usabilidade e tecnologia moderna.",
+          "button": {
+            "label": "Ver todos",
+            "path": "/projects"
+          }
+        },
+        {
+          "id": "blog-preview",
+          "title": "Últimos artigos",
+          "text": "Compartilho reflexões e dicas práticas sobre desenvolvimento web, boas práticas e ferramentas do dia a dia.",
+          "button": {
+            "label": "Ler artigos",
+            "path": "/blog"
+          }
+        }
+      ]
+    },
+    "en": {
+      "hero": {
+        "title": "Turning ideas into creative interfaces",
+        "subtitle": "Full stack developer focused on creating striking front-end experiences.",
+        "buttons": [
+          {
+            "label": "Learn more",
+            "path": "/about"
+          },
+          {
+            "label": "Projects",
+            "path": "/projects"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "id": "about-preview",
+          "title": "Who I am",
+          "text": "Developer blending creativity, code, and best practices to craft modern digital solutions.",
+          "button": {
+            "label": "Read more",
+            "path": "/about"
+          }
+        },
+        {
+          "id": "projects-preview",
+          "title": "Featured projects",
+          "text": "Check out some of the projects I’ve built with a focus on design, usability, and modern technology.",
+          "button": {
+            "label": "See all",
+            "path": "/projects"
+          }
+        },
+        {
+          "id": "blog-preview",
+          "title": "Latest articles",
+          "text": "I share thoughts and practical tips on web development, best practices, and everyday tools.",
+          "button": {
+            "label": "Read articles",
+            "path": "/blog"
+          }
+        }
+      ]
+    }
+  }
+  

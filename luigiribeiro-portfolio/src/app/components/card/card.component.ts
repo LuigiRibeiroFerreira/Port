@@ -13,6 +13,7 @@ import VanillaTilt from 'vanilla-tilt';
 })
 export class CardComponent {
   @Input() data!: CardData;
+  @Input() linkText = '';
   
   ngOnInit() {
     

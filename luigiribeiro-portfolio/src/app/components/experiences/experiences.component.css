@@ -15,3 +15,10 @@
     flex-direction: column;
     gap: var(--big-gap);
 }
+
+
+@media (max-width: 480px) {
+    .experiences {
+      width: 100%;
+    }
+  }

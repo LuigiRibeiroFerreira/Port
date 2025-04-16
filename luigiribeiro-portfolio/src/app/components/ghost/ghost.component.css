@@ -1,0 +1,81 @@
+.planet-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .planet {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(179, 143, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: float 4s ease-in-out infinite, rotate 10s linear infinite;
+  }
+  
+  .eyes {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+  
+  .eye {
+    width: 10px;
+    height: 10px;
+    background: #000000;
+    border-radius: 50%;
+  }
+  
+  .left {
+    margin-left: -5px;
+  }
+  
+  .right {
+    margin-right: -5px;
+  }
+  
+  .ring {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 2px solid rgba(179, 143, 255, 0.2);
+    border-radius: 50%;
+    animation: ringOrbit 4s linear infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes ringOrbit {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

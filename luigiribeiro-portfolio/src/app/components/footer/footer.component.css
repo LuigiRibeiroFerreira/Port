@@ -23,11 +23,11 @@
 .social-icon {
     width: 20px;
     height: 20 px;
-    filter: invert(60%); /* Adjust based on your theme colors */
+    filter: var(--social-icon-filter) /* Adjust based on your theme colors */
 }
 
 .social-link:hover .social-icon {
-    filter: invert(100%);
+    filter: var(--social-icon-hover-filter);
     transform: translateY(-2px);
 }
 

@@ -1,6 +1,7 @@
 <div class="projects">
     <app-developments 
       [projects]="(projectsData$ | async)?.projects || []"
-      [sectionTitle]="(projectsData$ | async)?.sectionTitle">
+      [sectionTitle]="(projectsData$ | async)?.sectionTitle"
+      [linkText] ="(projectsData$ | async)?.linkText">
     </app-developments>
 </div>

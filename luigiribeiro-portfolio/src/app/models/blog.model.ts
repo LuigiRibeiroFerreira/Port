@@ -13,4 +13,5 @@ export interface BlogData {
     date: string;
     author: string;
     tags: string[];
+    postLink:string;
 }

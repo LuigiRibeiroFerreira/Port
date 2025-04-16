@@ -1,0 +1,18 @@
+<div class="hero" *ngIf="heroData">
+    <h1 data-aos="fade-left">{{ heroData.title }}</h1>
+    <p data-aos="fade-right">{{ heroData.subtitle }}</p>
+  
+    <div class="hero-buttons" >
+      <a data-aos="fade-up"
+        *ngFor="let button of heroData.buttons; let i = index" 
+        [routerLink]="button.path" 
+        [ngClass]="i === 0 ? 'btn btn-primary' : 'btn btn-outline'"
+      >
+        {{ button.label }}
+      </a>
+    </div>
+    <div class="hero-bg-layer pulse"></div>
+    <div class="hero-bg-layer gradient"></div>
+    <div class="particles"></div>
+</div>
+  

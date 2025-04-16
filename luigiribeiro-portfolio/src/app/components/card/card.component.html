@@ -9,11 +9,10 @@
       <p data-aos="fade-left">{{ data.description }}</p>
       
       <!-- Technologies (for projects) -->
-      <div *ngIf="data.type === 'project'" class="technologies" data-aos="fade-left">
-        <p *ngFor="let tech of data.technologies">{{ tech }}</p>
-      </div>
-      <a  class="link" target="_blank" *ngIf="data.type === 'project'" [href]="data.projectLink"><span>Veja o projeto</span></a>
+      
+      <a  class="link" target="_blank" *ngIf="data.type === 'project'" [href]="data.projectLink"><span>{{ linkText }}</span></a>
       <!-- Blog Meta (for articles) -->
+      <a  class="link" target="_blank" *ngIf="data.type === 'blog'" [href]="data.projectLink"><span>{{ linkText }}</span></a>
       <div *ngIf="data.type === 'blog'" class="blog-meta" data-aos="fade-left">
         <span>{{ data.publishDate }}</span>
         <span *ngFor="let tag of data.tags">{{ tag }}</span>

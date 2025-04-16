@@ -28,3 +28,13 @@ p{
   
 }
 
+
+@media (max-width: 480px) {
+    .skills {
+      width: 100%;
+    }
+    .skills-list{
+        padding-left: 20px;
+    }
+
+  }

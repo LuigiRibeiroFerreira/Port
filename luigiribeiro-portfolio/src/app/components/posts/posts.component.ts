@@ -13,10 +13,10 @@ import AOS from 'aos';
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent implements OnChanges {
-  // Declare inputs exactly like DevelopmentsComponent
+
   @Input() posts: BlogPost[] = [];
   @Input() sectionTitle = '';
-  
+  @Input() linkText = '';
   cardData: CardData[] = [];
 
   ngOnChanges(changes: SimpleChanges) {
@@ -32,7 +32,8 @@ export class PostsComponent implements OnChanges {
       subtitle: post.subtitle,
       description: post.summary,
       imagePath: post.imagePath,
-      readMoreLink: `/blog/${this.slugify(post.title)}`
+      readMoreLink: `/blog/${this.slugify(post.title)}`,
+      projectLink: post.postLink
     }));
 
     setTimeout(() => AOS.refresh(), 0);

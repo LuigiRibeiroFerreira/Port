@@ -34,7 +34,7 @@ export class ExperiencesComponent implements OnChanges {
       description: exp.description,
       imagePath: exp.imagePath
     }));
-
+    console.log(this.cardData)
     setTimeout(() => AOS.refresh(), 0);
   }
 }

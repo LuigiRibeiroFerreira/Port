@@ -9,3 +9,9 @@
     gap: var(--medium-gap);
 }
 
+
+@media (max-width: 480px) {
+    .who-am-i {
+      width: 100%;
+    }
+  }

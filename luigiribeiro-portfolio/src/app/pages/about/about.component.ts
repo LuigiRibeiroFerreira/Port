@@ -20,14 +20,14 @@ import { AboutContentService } from '../../services/content/about-content.servic
 export class AboutComponent {
 
   aboutData$: ReturnType<AboutContentService['getAboutData']>;
-  currentTheme: 'light' | 'dark' | 'ocean';
+  
 
   constructor(
     private aboutContentService: AboutContentService,
     public globalService: GlobalService
   ) {
-    // Initialize properties after injection
+    
     this.aboutData$ = this.aboutContentService.getAboutData();
-    this.currentTheme = this.globalService.theme;
+    
   }
 }

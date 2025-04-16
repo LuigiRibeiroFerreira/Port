@@ -1,17 +1,19 @@
 <!-- about.component.html -->
 <div class="about">
-    <app-identify [personalInfo]="(aboutData$ | async)?.personalInfo"></app-identify>
-    <app-who-i-am></app-who-i-am>
-    <app-experiences 
-        [experiences]="(aboutData$ | async)?.experiences || []"
-        [sectionTitle]="(aboutData$ | async)?.titles?.experiences">
-    </app-experiences>
-    <app-courses 
-        [courses]="(aboutData$ | async)?.courses || []"
-        [sectionTitle]="(aboutData$ | async)?.titles?.courses">
-    </app-courses>
-    <app-skills 
-        [skills]="(aboutData$ | async)?.skills || {}"
-        [sectionTitle]="(aboutData$ | async)?.titles?.skills">
-    </app-skills>
+    <ng-container *ngIf="aboutData$ | async as aboutData">
+        <app-identify [personalInfo]="(aboutData$ | async)?.personalInfo"></app-identify>
+        <app-who-i-am [about]="(aboutData$ | async)?.about"></app-who-i-am>
+        <app-experiences 
+            [experiences]="(aboutData$ | async)?.experiences || []"
+            [sectionTitle]="(aboutData$ | async)?.titles?.experiences">
+        </app-experiences>
+        <app-courses 
+            [courses]="(aboutData$ | async)?.courses || []"
+            [sectionTitle]="(aboutData$ | async)?.titles?.courses">
+        </app-courses>
+        <app-skills 
+            [skills]="(aboutData$ | async)?.skills || {}"
+            [sectionTitle]="(aboutData$ | async)?.titles?.skills">
+        </app-skills>
+    </ng-container>
 </div>
