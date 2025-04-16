@@ -1,0 +1,98 @@
+
+{ "pt":{
+  "sectionTitle":"Projetos",
+  "linkText":"Veja o projeto",
+    "projects": [
+      {
+        "type": "project",
+        "title": "Bitcoin Bank Dashboard",
+        "subtitle": "App de fundos Bitcoin",
+        "description": "Desenvolvimento de um painel administrativo para um banco de Bitcoin, integrando API local para gestão de usuários e API externa para atualização do câmbio. Suporta conversão automática, paginação e exportação em CSV.",
+        "technologies": ["Vue.js", "JavaScript", "Node.js", "CSS"],
+        "imagePath": "assets/bitcoin-bank.png",
+        "projectLink": "https://github.com/LuigiRibeiroFerreira/desafio-frontend/tree/Luigi-Ribeiro-Ferreira", 
+        "codeLink": "#"
+      },
+      {
+        "type": "project",
+        "title": "Pokédex React",
+        "subtitle": "Guia interativo de Pokémon",
+        "description": "Pokédex interativa que consome a API pública de Pokémon, permitindo gerenciar uma coleção pessoal e acessar detalhes dos Pokémon. Possui transições suaves e interface intuitiva, desenvolvida em equipe.",
+        "technologies": ["React", "Styled Components", "REST API", "JavaScript"],
+        "imagePath": "assets/pokedex-react.png",
+        "projectLink": "https://github.com/future4code/maryam-pokedex11",
+        "codeLink": "#"
+      },
+      {
+        "type": "project",
+        "title": "4Food: FutureEats",
+        "subtitle": "Plataforma de pedidos online",
+        "description": "Uma plataforma de delivery semelhante ao iFood, permitindo login de usuários, exibição de cards de restaurantes, edição de perfil e endereço, histórico de compras, carrinho de compras e cadastro de novos usuários.",
+        "technologies": ["React.js", "JavaScript", "Styled Components"],
+        "imagePath": "assets/future-eats.png",
+        "projectLink": "https://github.com/future4code/maryam-labe-food8",
+        "codeLink": "#"
+      },
+
+      {
+        "type": "project",
+        "title": "Snake Game Neon",
+        "subtitle": "Jogo da cobrinha com efeitos neon",
+        "description": "Jogo da cobrinha com design neon, mecânicas aprimoradas e efeitos visuais imersivos. Inclui loop clássico, recorde no localStorage, partículas e screenshake ao pontuar.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "imagePath": "assets/Snake.png",
+        "projectLink": "#",
+        "codeLink": "#"
+      }
+    ]
+  },
+  "en": {
+    "sectionTitle":"Projects",
+    "linkText":"View the project",
+    "projects": [
+      {
+        "type": "project",
+        "title": "Bitcoin Bank Dashboard",
+        "subtitle": "Bitcoin funds app",
+        "description": "Development of an admin panel for a Bitcoin bank, integrating a local API for user management and an external API for real-time exchange rate updates. Supports automatic conversion, pagination, and CSV export.",
+        "technologies": ["Vue.js", "JavaScript", "Node.js", "CSS"],
+        "imagePath": "assets/bitcoin-bank.png",
+        "projectLink": "https://github.com/LuigiRibeiroFerreira/desafio-frontend/tree/Luigi-Ribeiro-Ferreira", 
+        "codeLink": "#"
+      },
+      {
+        "type": "project",
+        "title": "Pokédex React",
+        "subtitle": "Interactive Pokémon Guide",
+        "description": "An interactive Pokédex that consumes the public Pokémon API, allowing users to manage their collection and view Pokémon details. Features smooth transitions, an intuitive interface, and was developed collaboratively.",
+        "technologies": ["React", "Styled Components", "REST API", "JavaScript"],
+        "imagePath": "assets/pokedex-react.png",
+        "projectLink": "https://github.com/future4code/maryam-pokedex11",
+        "codeLink": "#"
+      },
+      {
+        "type": "project",
+        "title": "4Food: FutureEats",
+        "subtitle": "Online ordering platform",
+        "description": "A delivery platform similar to iFood, allowing user login, restaurant card display, profile and address editing, purchase history, shopping cart, and new user registration.",
+        "technologies": ["React.js", "JavaScript", "Styled Components"],
+        "imagePath": "assets/future-eats.png",
+        "projectLink": "https://github.com/future4code/maryam-labe-food8",
+        "codeLink": "#"
+      },
+
+      {
+        "type": "project",
+        "title": "Snake Game Neon",
+        "subtitle": "Classic snake game with neon effects",
+        "description": "A neon-themed Snake game with enhanced mechanics and immersive effects. Includes a classic loop, localStorage high-score tracking, particle effects, and screenshake on scoring.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "imagePath": "assets/Snake.png",
+        "projectLink": "#",
+        "codeLink": "#"
+      }
+    ]
+  }
+
+
+}

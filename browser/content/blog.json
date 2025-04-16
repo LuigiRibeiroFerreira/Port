@@ -1,0 +1,56 @@
+{
+  "pt": {
+    "sectionTitle":"Blog",
+    "linkText": "Leia mais",
+    "posts": [
+      { 
+        "type": "blog",
+        "title": "Descomplicando o Git",
+        "subtitle": "Git: Guia fácil de usar",
+        "imagePath": "assets/Git.jpg",
+        "summary": "Aprenda de forma prática como iniciar um repositório, rastrear mudanças, enviar commits e muito mais!",
+        "content": "Conteúdo completo do artigo em HTML...",
+        "postLink": "https://www.linkedin.com/posts/luigi-ribeiro-ferreira-163085224_𝐃𝐞𝐬𝐜𝐨𝐦𝐩𝐥𝐢𝐜𝐚𝐧𝐝𝐨-𝐨-𝐆𝐢𝐭-𝐔𝐦-activity-7267266104119480320-s6YG/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADhAapsBmd_7THct8AARCnrhjHYcnQHprW0",
+        "date": "2024-03-20",
+        "tags": ["Angular", "Frontend"]
+      },
+      {
+        "type": "blog",
+        "title": "Código Limpo no Front-end",
+        "subtitle": "Boas práticas para aplicar agora!",
+        "imagePath": "assets/CodigoLimpo.jpg",
+        "summary": "Dicas práticas de HTML, CSS e JS pra deixar seu código mais organizado, legível e fácil de manter.",
+        "content": "",
+        "postLink": "https://www.linkedin.com/posts/luigi-ribeiro-ferreira-163085224_dc4c6d-activity-7316494563190169600-kLuc?utm_source=share&utm_medium=member_desktop&rcm=ACoAADhAapsBmd_7THct8AARCnrhjHYcnQHprW0",
+        "date": "2025-04-11",
+        "tags": ["HTML", "CSS", "JavaScript", "Frontend"]
+      }
+    ]
+  },
+  "en": {
+    "sectionTitle":"Blog",
+    "linkText": "Read more",
+    "posts": [
+      {
+        "title": "Simplifying Git",
+        "subtitle": "Git: Easy guide to use it",
+        "imagePath": "assets/Git.jpg",
+        "summary": "Learn step by step how to start a repository, track changes, commit, and more!",
+        "content": "Full article content in HTML...",
+        "postLink": "https://www.linkedin.com/posts/luigi-ribeiro-ferreira-163085224_𝐃𝐞𝐬𝐜𝐨𝐦𝐩𝐥𝐢𝐜𝐚𝐧𝐝𝐨-𝐨-𝐆𝐢𝐭-𝐔𝐦-activity-7267266104119480320-s6YG/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADhAapsBmd_7THct8AARCnrhjHYcnQHprW0",
+        "date": "2024-03-20",
+        "tags": ["Angular", "Frontend"]
+      },
+      {
+        "title": "Clean Code in Front-end",
+        "subtitle": "Best practices to apply now!",
+        "imagePath": "assets/CodigoLimpo.jpg",
+        "summary": "Practical tips in HTML, CSS, and JS to write clearer, cleaner and more maintainable code.",
+        "content": "",
+        "postLink": "https://www.linkedin.com/posts/luigi-ribeiro-ferreira-163085224_dc4c6d-activity-7316494563190169600-kLuc?utm_source=share&utm_medium=member_desktop&rcm=ACoAADhAapsBmd_7THct8AARCnrhjHYcnQHprW0",
+        "date": "2025-04-11",
+        "tags": ["HTML", "CSS", "JavaScript", "Frontend"]
+      }
+    ]
+  }
+}
