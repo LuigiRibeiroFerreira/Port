@@ -56,20 +56,20 @@ export class AppComponent implements OnInit {
     this.animationState = 0;
   }
 
-  // Function to calculate the spacing value and set the CSS variable
+  // função pra calcular espaçamento
   calculateSpacing(): void {
     const viewportWidth = window.innerWidth;
     const viewpotHeight = window.innerHeight
     const spacing = -0.0329 * viewportWidth + 100;
     const iframeh = viewpotHeight;
-    // Updates the global CSS variable
+    // Update variável global
     document.documentElement.style.setProperty('--spacing', `${spacing}vw`);
     document.documentElement.style.setProperty('--iframeh', `${iframeh}px`);
     
     
   }
 
-  // Listener to update spacing calculation when resizing window
+  // Listener pra atualizar espaço
   @HostListener('window:resize')
   onResize() {
     this.calculateSpacing();
@@ -77,6 +77,6 @@ export class AppComponent implements OnInit {
 
   get theme() {
     const currentTheme = this.globalService.theme;
-    return `${currentTheme}-theme`; // Add "-theme" to the theme name
+    return `${currentTheme}-theme`; // Add "-theme" para o nome dotema
   }
 }

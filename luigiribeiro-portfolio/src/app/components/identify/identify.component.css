@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--medium-gap);
-    padding-top: 6rem;
+    padding-top: 8rem;
 }
 .typing-container {
     display: inline-flex;
@@ -41,11 +41,16 @@
   
 
   
-  @media (max-width: 480px) {
+  @media (max-width: 760px) {
     .identify {
       width: 100%;
     }
     .typing-container {
-        padding-left: 30px;
-      }
+        padding-left: 0px;
+    }
+    .position-left{
+        width: 100%;
+        padding-left: 5px;
+        display:contents;        
+    }
   }

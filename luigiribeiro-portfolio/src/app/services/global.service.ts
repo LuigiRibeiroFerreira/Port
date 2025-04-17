@@ -11,7 +11,7 @@ export class GlobalService {
   public _language = new BehaviorSubject<'pt' | 'en'>(this.getStoredLanguage());
   private _animationTrigger = new BehaviorSubject<number>(0);
 
-  private _theme: 'light' | 'dark' = 'dark'; 
+  private _theme: 'light' | 'dark' = 'dark'; // Padrão
 
 
 
@@ -39,7 +39,7 @@ export class GlobalService {
       const storedLang = localStorage.getItem(this.LANGUAGE_KEY) as 'pt' | 'en';
       if (storedLang) return storedLang;
     }
-    return 'pt'; // Default if nothing is saved
+    return 'pt'; // Padrão
   }
   
 }

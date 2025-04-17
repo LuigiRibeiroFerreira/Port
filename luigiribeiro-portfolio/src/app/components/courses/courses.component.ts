@@ -34,6 +34,6 @@ export class CoursesComponent implements OnChanges {
       imagePath: course.imagePath
     }));
     
-    setTimeout(() => AOS.refresh(), 0); // Refresh AOS after data load
+    setTimeout(() => AOS.refresh(), 0); 
   }
 }

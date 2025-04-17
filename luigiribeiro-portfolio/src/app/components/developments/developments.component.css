@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--medium-gap);
+    padding-top: 6rem;
 }
   
 .list{
@@ -13,7 +14,7 @@
     flex-direction: column;
     gap: var(--big-gap);
 }
-@media (max-width: 480px) {
+@media (max-width: 760px) {
     .projects-section {
       width: 100%;
     }

@@ -1,7 +1,8 @@
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,6 +27,7 @@
   /* NAV DESKTOP */
   .header__nav {
     display: flex;
+    
   }
   ul {
     display: flex;
@@ -56,7 +58,7 @@
     align-items: center;
   }
   
-  /* HAMBURGER BUTTON */
+  /* BOTÃO HAMBURGER */
   .hamburger {
     display: none;
     flex-direction: column;
@@ -83,7 +85,7 @@
     transform: translateY(-7px) rotate(-45deg);
   }
   
-  /* RESPONSIVE NAV */
+ 
   @media (max-width: 768px) {
 
     .hamburger {
@@ -99,6 +101,7 @@
       overflow: hidden;
       max-height: 0;
       opacity: 0;
+      
       pointer-events: none;
       transition: max-height 0.3s ease, opacity 0.3s ease;
       flex-direction: column;
@@ -108,6 +111,9 @@
       max-height: 300px;
       opacity: 1;
       pointer-events: all;
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      
     }
   
     .header__nav ul {
@@ -122,6 +128,7 @@
         width: 100%;
         justify-content: center;
         margin-bottom: 0.5rem;
+        
       }
       .hamburger {
         order: 2;

@@ -12,7 +12,7 @@
     text-align: center;
     position: relative;
   
-    background-color: var(--color-bg); /* escuro */
+    background-color: var(--color-bg); 
     overflow: hidden;
 }
   
@@ -112,7 +112,7 @@
     animation-delay: 5s;
   }
   
-  /* 🔁 Animações */
+
   @keyframes pulseBg {
     0%, 100% {
       transform: scale(1);

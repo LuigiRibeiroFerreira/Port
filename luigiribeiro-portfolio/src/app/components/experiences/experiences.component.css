@@ -17,8 +17,13 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 760px) {
     .experiences {
       width: 100%;
+    }
+    .position-left{
+      width: 100%;
+      padding-left: 5px;
+      display:contents;        
     }
   }

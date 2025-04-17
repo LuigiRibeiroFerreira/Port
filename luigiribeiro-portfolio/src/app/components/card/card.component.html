@@ -7,18 +7,16 @@
     <div class="position-right">
       <h3 data-aos="fade-left">{{ data.title }}</h3>
       <p data-aos="fade-left">{{ data.description }}</p>
-      
-      <!-- Technologies (for projects) -->
-      
+    
+      <!-- Link para projetos -->
       <a  class="link" target="_blank" *ngIf="data.type === 'project'" [href]="data.projectLink"><span>{{ linkText }}</span></a>
-      <!-- Blog Meta (for articles) -->
+      <!-- Campos para blog-->
       <a  class="link" target="_blank" *ngIf="data.type === 'blog'" [href]="data.projectLink"><span>{{ linkText }}</span></a>
       <div *ngIf="data.type === 'blog'" class="blog-meta" data-aos="fade-left">
         <span>{{ data.publishDate }}</span>
         <span *ngFor="let tag of data.tags">{{ tag }}</span>
       </div>
-  
-      <!-- Image (common to all) -->
+
       <div data-aos="fade-left" class="image tilt-element" data-aos="fade-left">
         <img [src]="data.imagePath" [alt]="data.title">
         

@@ -25,6 +25,6 @@ export class AnimateOnLangChangeDirective implements OnInit {
     setTimeout(() => {
       this.renderer.removeClass(this.el.nativeElement, 'language-change-animation');
 
-    }, 500); // Tempo da animação no CSS (0.5s)
+    }, 500); // (0.5s)
   }
 }

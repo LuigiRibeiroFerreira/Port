@@ -16,7 +16,7 @@
     gap: var(--big-gap);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 760px) {
     .courses {
       width: 100%;
     }
